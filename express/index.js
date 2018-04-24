@@ -11,4 +11,4 @@ const app = express()
 app.use('/html', express.static(path.join(__dirname, '../html')))
 
 
-app.listen(1337, () => console.log('Example app listening on port 3000!'))
+app.listen(1337, () => console.log('Example app listening on port 1337'))
