@@ -1,0 +1,17 @@
+{
+  "name": "http-simple-server",
+  "version": "0.0.2",
+  "description": "a simple http static server",
+  "main": "./express/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "http-server"
+  ],
+  "author": "wheelo",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
