@@ -6,6 +6,10 @@ var http = require("http"),
 var port = process.argv[2] || 1337;
 
 http.createServer(function (request, response) {
+    if (request.method !== 'GET')   {
+        request.end()
+        return
+    }
 
     var uri = url.parse(request.url).pathname,
         filename = path.join(process.cwd(), uri);
@@ -60,4 +64,4 @@ http.createServer(function (request, response) {
 
 
 
-console.log("Static file server running at\n  => http://localhost:" + port + "/\nCTRL + C to shutdown");
+console.log("Static file server running at\n  => http://localhost:" + port);
